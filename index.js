@@ -9,14 +9,18 @@ const bills = [
 	{
 		id: 1,
 		nameCustomer: 'Sebastian Alvarez',
-		date: Date.now(),
-		items: {
-			id: 1,
-			unityPrice: 2000,
-			quantity: 3,
-		},
+		date: new Date().toLocaleDateString(),
+		items: [
+			{
+				id: 1,
+				unityPrice: 2000,
+				quantity: 3,
+			},
+		],
 	},
 ];
+
+console.log(bills);
 
 // Ejercicio 2
 // Escribir una función crearContador que retorne una nueva función que incremente un número y lo retorne cada vez que es invocada:
